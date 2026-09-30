@@ -1,0 +1,8 @@
+Metric,Unconstrained,Constrained (Proposed)
+Validity (% Target Class Achieved),100.00%,100.00%
+"Proximity L1 (MAD-normalized, lower is better)",4299.451,4201.030
+"Proximity L2 (Range-normalized, lower is better)",0.004,0.004
+"Sparsity (Avg Features Changed, lower is better)",1.00,1.00
+Actionability Score (% allowed features modified),100.00%,100.00%
+Plausibility (% Inliers on Purchase Manifold),100.00%,100.00%
+Diversity (Pairwise Distance between CFs),0.002,0.002
