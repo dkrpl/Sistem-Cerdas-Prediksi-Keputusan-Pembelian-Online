@@ -206,10 +206,30 @@ def generate_cf(
                 continue
 
             cfs = normalize_cf_types(raw, reference_df)
+
+            # Guard eksplisit: fallback engine tidak boleh lolos jika mengubah
+            # fitur di luar ACTIONABLE_FEATURES pada mode constrained.
+            if constrained and len(cfs):
+                original_row = query.iloc[0]
+                valid_rows = []
+
+                for _, candidate in cfs.iterrows():
+                    changes = changed_features(original_row, candidate)
+                    if all(col in ACTIONABLE_FEATURES for col in changes):
+                        valid_rows.append(candidate)
+
+                cfs = (
+                    pd.DataFrame(valid_rows)[ALL_PREDICTORS].reset_index(drop=True)
+                    if valid_rows
+                    else pd.DataFrame(columns=ALL_PREDICTORS)
+                )
+
             if len(cfs):
                 return cfs, engine_name, None
 
-            errors.append(f"{engine_name}: kandidat kosong setelah normalisasi")
+            errors.append(
+                f"{engine_name}: kandidat kosong/tidak lolos actionability guard"
+            )
         except Exception as exc:
             errors.append(f"{engine_name}: {type(exc).__name__}: {exc}")
 
