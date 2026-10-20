@@ -1,8 +1,10 @@
-Metric,Unconstrained,Constrained (Proposed)
-Validity (% Target Class Achieved),100.00%,100.00%
-"Proximity L1 (MAD-normalized, lower is better)",4299.451,4201.030
-"Proximity L2 (Range-normalized, lower is better)",0.004,0.004
-"Sparsity (Avg Features Changed, lower is better)",1.00,1.00
-Actionability Score (% allowed features modified),100.00%,100.00%
-Plausibility (% Inliers on Purchase Manifold),100.00%,100.00%
-Diversity (Pairwise Distance between CFs),0.002,0.002
+Metric,Unconstrained,Constrained
+Generation Rate,1.0,0.23333333333333334
+Query Coverage,1.0,0.235
+Validity,0.9983333333333333,1.0
+Proximity L1,0.05718627602350594,0.06314970058335426
+Proximity L2,0.19050023193777665,0.19141009516583893
+Sparsity,1.6383333333333334,1.9928571428571429
+Plausibility,0.87,0.9571428571428572
+Actionability,0.1525,1.0
+Diversity,0.074758720997129,0.04608361869237117

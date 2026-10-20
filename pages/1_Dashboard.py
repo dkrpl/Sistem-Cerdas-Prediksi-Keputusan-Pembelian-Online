@@ -7,6 +7,28 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import os
+from pathlib import Path
+
+METRICS_DIR = Path(__file__).resolve().parent.parent / "results" / "metrics"
+
+
+def _best_model_metric():
+    """Ambil model terbaik (PR-AUC) dari hasil eksperimen, bukan nilai hard-code."""
+    try:
+        df = pd.read_csv(METRICS_DIR / "experiment_1_model_comparison.csv")
+        row = df.sort_values("PR-AUC", ascending=False).iloc[0]
+        return f"{row['PR-AUC']:.4f}".replace(".", ","), str(row["Model"])
+    except Exception:
+        return "-", "Jalankan notebook terlebih dahulu"
+
+
+def _global_shap(top_n=7):
+    """Ambil global mean |SHAP| hasil notebook (shap_global_importance.csv)."""
+    try:
+        df = pd.read_csv(METRICS_DIR / "shap_global_importance.csv").head(top_n)
+        return df.rename(columns={"Feature": "Fitur", "MeanAbsSHAP": "Mean |SHAP| Value"})
+    except Exception:
+        return pd.DataFrame({"Fitur": [], "Mean |SHAP| Value": []})
 
 st.set_page_config(page_title="Dashboard | Purchase Intelligence", page_icon="📊", layout="wide")
 
@@ -18,7 +40,8 @@ m1, m2, m3, m4 = st.columns(4)
 m1.metric("Total Sesi Data Bersih", "12.205 Sesi", "125 Duplikat Dihapus (dari 12.330)")
 m2.metric("Sesi Pembelian (Revenue=True)", "15,63%", "1.908 Transaksi")
 m3.metric("Non-Pembelian (Revenue=False)", "84,37%", "10.297 Sesi")
-m4.metric("Model Terbaik (PR-AUC)", "0,742", "Random Forest / XGBoost")
+_prauc, _best = _best_model_metric()
+m4.metric("Model Terbaik (PR-AUC)", _prauc, _best)
 
 st.markdown("---")
 c1, c2 = st.columns([1, 1])
@@ -37,14 +60,11 @@ with c1:
     )
     fig_pie.update_traces(textinfo="percent+label")
     st.plotly_chart(fig_pie, use_container_width=True)
-    st.caption("Ketimpangan kelas (*class imbalance*) 1 : 5,4. Ditangani melalui SMOTE pada data latih dan evaluasi sensitif PR-AUC.")
+    st.caption("Ketimpangan kelas (*class imbalance*) 1 : 5,4. Model final menangani ketimpangan kelas melalui class weighting (scale_pos_weight); SMOTE diuji sebagai pembanding, dan evaluasi memakai PR-AUC.")
 
 with c2:
     st.subheader("Sinyal Fitur Paling Berpengaruh (Global Mean |SHAP|)")
-    feature_imp = pd.DataFrame({
-        "Fitur": ["PageValues", "ExitRates", "ProductRelated_Duration", "ProductRelated", "BounceRates", "Month", "Administrative"],
-        "Mean |SHAP| Value": [0.42, 0.18, 0.14, 0.11, 0.08, 0.05, 0.04]
-    }).sort_values(by="Mean |SHAP| Value", ascending=True)
+    feature_imp = _global_shap().sort_values(by="Mean |SHAP| Value", ascending=True)
 
     fig_bar = px.bar(
         feature_imp, x="Mean |SHAP| Value", y="Fitur",
@@ -53,7 +73,7 @@ with c2:
         color_continuous_scale="Viridis"
     )
     st.plotly_chart(fig_bar, use_container_width=True)
-    st.caption("`PageValues` merupakan prediktor terkuat, diikuti durasi dan jumlah halaman produk yang dilihat pengguna.")
+    st.caption("Nilai dihitung dengan SHAP TreeExplainer pada model final (500 sesi data uji). `PageValues` merupakan prediktor terkuat.")
 
 st.markdown("---")
 st.subheader("📋 Kamus Fitur & Kategori Constraint (Kebaruan Penelitian)")

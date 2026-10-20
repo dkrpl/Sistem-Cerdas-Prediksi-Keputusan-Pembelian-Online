@@ -1,0 +1,16 @@
+ID,Modul,Skenario,Input,Expected,Observed,Hasil,Detik
+BB-01,Beranda,Membuka halaman utama,-,Judul dan ringkasan sistem tampil,Halaman utama tampil tanpa error,Berhasil,0.2
+BB-02,Dashboard,Membuka dashboard,-,"Statistik dataset & model terbaik (PR-AUC 0,7585, XGBoost) tampil","Metrik model terbaik = ('0,7585', 'XGBoost')",Berhasil,0.2
+BB-03,Prediction,Preset 1: pengunjung ragu-ragu,Preset 1,"Prediksi NON-PURCHASE, probabilitas sama dengan model",TIDAK MEMBELI (NON-PURCHASE) (P=0.016; cek ulang model P=0.016),Berhasil,0.2
+BB-04,Prediction,Preset 2: calon pembeli antusias,Preset 2,"Prediksi PURCHASE, probabilitas sama dengan model",AKAN MEMBELI (PURCHASE) (P=0.887; cek ulang model P=0.887),Berhasil,0.2
+BB-05,Prediction,Preset 3: pengunjung marjinal,Preset 3,Probabilitas valid (0–1) dan P(beli)+P(tidak) = 1,AKAN MEMBELI (PURCHASE) (P=0.826),Berhasil,0.3
+BB-06,Prediction,Input manual: PageValues dinaikkan ke 60,Preset 1 + PageValues=60,Probabilitas pembelian naik dan sesuai model,PageValues=60 → AKAN MEMBELI (PURCHASE) (P=0.914),Berhasil,0.2
+BB-07,Prediction,Validasi batas input numerik,ProductRelated,Field memiliki batas minimum & maksimum,Batas input ProductRelated: 0.0–700.0 (nilai di luar batas ditolak widget),Berhasil,0.1
+BB-08,Explainability,Dibuka tanpa sesi prediksi,-,"Sistem menampilkan peringatan, tidak error",Peringatan 'Belum ada sesi' tampil,Berhasil,0.7
+BB-09,Explainability,Local SHAP untuk sesi preset 1,Sesi BB-03,SHAP dihitung dari model; base + ΣSHAP = logit prediksi,Σ SHAP + base = -4.138; logit model = -4.138,Berhasil,1.4
+BB-10,Counterfactual,Dibuka tanpa sesi prediksi,-,"Sistem menampilkan peringatan, tidak error",Peringatan 'Belum ada sesi' tampil,Berhasil,0.3
+BB-11,Counterfactual,Sesi sudah diprediksi Purchase,Sesi BB-04,Sistem menyatakan counterfactual tidak diperlukan,Pesan: counterfactual tidak diperlukan,Berhasil,0.1
+BB-12,Counterfactual,Unconstrained (baseline) pada sesi Non-Purchase,Sesi BB-03,CF dihasilkan dan mencapai kelas Purchase,CF dibuat; fitur berubah: PageValues,Berhasil,0.6
+BB-13,Counterfactual,Constrained actionable pada sesi Non-Purchase,Sesi BB-03,"CF hanya mengubah fitur actionable, atau pesan jika tidak feasible",Tidak ada CF feasible → pesan informatif,Berhasil,13.5
+BB-14,Counterfactual,Constrained actionable pada sesi uji Non-Purchase (query #1 benchmark),Query #1 data uji,"CF dihasilkan, hanya fitur actionable yang berubah",CF dibuat; fitur berubah: ProductRelated_Duration,Berhasil,0.5
+BB-15,Model Evaluation,Membuka halaman evaluasi,-,Tabel hasil eksperimen tampil dari file hasil,3 tabel hasil eksperimen tampil,Berhasil,0.6

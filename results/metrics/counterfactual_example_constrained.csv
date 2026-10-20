@@ -1,0 +1,3 @@
+Feature,Original,Counterfactual,Category
+Administrative_Duration,106.8333333,395.8,Mutable/Behavioral
+ProductRelated_Duration,373.4583333,7088.5,Mutable/Behavioral

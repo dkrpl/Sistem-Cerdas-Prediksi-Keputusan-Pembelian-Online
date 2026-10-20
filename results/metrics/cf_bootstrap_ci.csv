@@ -1,0 +1,13 @@
+Scenario,Metric,CI_low,CI_high
+Unconstrained,Proximity_L1,0.054745252132439984,0.05958300970458531
+Unconstrained,Proximity_L2,0.18357880350946032,0.19767206850259747
+Unconstrained,Sparsity,1.6,1.6733333333333333
+Unconstrained,Plausibility,0.8266666666666667,0.9083333333333333
+Unconstrained,Actionability,0.13,0.17502083333333301
+Unconstrained,Validity,0.995,1.0
+Constrained,Proximity_L1,0.056664680569100984,0.06969542018342892
+Constrained,Proximity_L2,0.17665329518103134,0.20571712475615522
+Constrained,Sparsity,1.8571428571428572,2.1285714285714286
+Constrained,Plausibility,0.8928571428571429,1.0
+Constrained,Actionability,1.0,1.0
+Constrained,Validity,1.0,1.0

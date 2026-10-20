@@ -1,0 +1,401 @@
+Query,Scenario,Engine,Requested_CFs,Generated_CFs,Error
+1,Unconstrained,random,3,3,
+1,Constrained,random,3,3,
+2,Unconstrained,random,3,3,
+2,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+3,Unconstrained,random,3,3,
+3,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+4,Unconstrained,random,3,3,
+4,Constrained,random,3,3,
+5,Unconstrained,random,3,3,
+5,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+6,Unconstrained,random,3,3,
+6,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+7,Unconstrained,random,3,3,
+7,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+8,Unconstrained,random,3,3,
+8,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+9,Unconstrained,random,3,3,
+9,Constrained,random,3,3,
+10,Unconstrained,random,3,3,
+10,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+11,Unconstrained,random,3,3,
+11,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+12,Unconstrained,random,3,3,
+12,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+13,Unconstrained,random,3,3,
+13,Constrained,random,3,3,
+14,Unconstrained,random,3,3,
+14,Constrained,random,3,3,
+15,Unconstrained,random,3,3,
+15,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+16,Unconstrained,random,3,3,
+16,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+17,Unconstrained,random,3,3,
+17,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+18,Unconstrained,random,3,3,
+18,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+19,Unconstrained,random,3,3,
+19,Constrained,random,3,3,
+20,Unconstrained,random,3,3,
+20,Constrained,random,3,3,
+21,Unconstrained,random,3,3,
+21,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+22,Unconstrained,random,3,3,
+22,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+23,Unconstrained,random,3,3,
+23,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+24,Unconstrained,random,3,3,
+24,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+25,Unconstrained,random,3,3,
+25,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+26,Unconstrained,random,3,3,
+26,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+27,Unconstrained,random,3,3,
+27,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+28,Unconstrained,random,3,3,
+28,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+29,Unconstrained,random,3,3,
+29,Constrained,random,3,3,
+30,Unconstrained,random,3,3,
+30,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+31,Unconstrained,random,3,3,
+31,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+32,Unconstrained,random,3,3,
+32,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+33,Unconstrained,random,3,3,
+33,Constrained,random,3,3,
+34,Unconstrained,random,3,3,
+34,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+35,Unconstrained,random,3,3,
+35,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+36,Unconstrained,random,3,3,
+36,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+37,Unconstrained,random,3,3,
+37,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+38,Unconstrained,random,3,3,
+38,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+39,Unconstrained,random,3,3,
+39,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+40,Unconstrained,random,3,3,
+40,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+41,Unconstrained,random,3,3,
+41,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+42,Unconstrained,random,3,3,
+42,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+43,Unconstrained,random,3,3,
+43,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+44,Unconstrained,random,3,3,
+44,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+45,Unconstrained,random,3,3,
+45,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+46,Unconstrained,random,3,3,
+46,Constrained,random,3,3,
+47,Unconstrained,random,3,3,
+47,Constrained,random,3,3,
+48,Unconstrained,random,3,3,
+48,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+49,Unconstrained,random,3,3,
+49,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+50,Unconstrained,random,3,3,
+50,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+51,Unconstrained,random,3,3,
+51,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+52,Unconstrained,random,3,3,
+52,Constrained,random,3,3,
+53,Unconstrained,random,3,3,
+53,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+54,Unconstrained,random,3,3,
+54,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+55,Unconstrained,random,3,3,
+55,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+56,Unconstrained,random,3,3,
+56,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+57,Unconstrained,random,3,3,
+57,Constrained,random,3,3,
+58,Unconstrained,random,3,3,
+58,Constrained,random,3,3,
+59,Unconstrained,random,3,3,
+59,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+60,Unconstrained,random,3,3,
+60,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+61,Unconstrained,random,3,3,
+61,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+62,Unconstrained,random,3,3,
+62,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+63,Unconstrained,random,3,3,
+63,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+64,Unconstrained,random,3,3,
+64,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+65,Unconstrained,random,3,3,
+65,Constrained,random,3,3,
+66,Unconstrained,random,3,3,
+66,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+67,Unconstrained,random,3,3,
+67,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+68,Unconstrained,random,3,3,
+68,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+69,Unconstrained,random,3,3,
+69,Constrained,random,3,3,
+70,Unconstrained,random,3,3,
+70,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+71,Unconstrained,random,3,3,
+71,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+72,Unconstrained,random,3,3,
+72,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+73,Unconstrained,random,3,3,
+73,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+74,Unconstrained,random,3,3,
+74,Constrained,random,3,3,
+75,Unconstrained,random,3,3,
+75,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+76,Unconstrained,random,3,3,
+76,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+77,Unconstrained,random,3,3,
+77,Constrained,random,3,3,
+78,Unconstrained,random,3,3,
+78,Constrained,random,3,3,
+79,Unconstrained,random,3,3,
+79,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+80,Unconstrained,random,3,3,
+80,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+81,Unconstrained,random,3,3,
+81,Constrained,random,3,3,
+82,Unconstrained,random,3,3,
+82,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+83,Unconstrained,random,3,3,
+83,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+84,Unconstrained,random,3,3,
+84,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+85,Unconstrained,random,3,3,
+85,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+86,Unconstrained,random,3,3,
+86,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+87,Unconstrained,random,3,3,
+87,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+88,Unconstrained,random,3,3,
+88,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+89,Unconstrained,random,3,3,
+89,Constrained,random,3,3,
+90,Unconstrained,random,3,3,
+90,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+91,Unconstrained,random,3,3,
+91,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+92,Unconstrained,random,3,3,
+92,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+93,Unconstrained,random,3,3,
+93,Constrained,random,3,3,
+94,Unconstrained,random,3,3,
+94,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+95,Unconstrained,random,3,3,
+95,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+96,Unconstrained,random,3,3,
+96,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+97,Unconstrained,random,3,3,
+97,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+98,Unconstrained,random,3,3,
+98,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+99,Unconstrained,random,3,3,
+99,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+100,Unconstrained,random,3,3,
+100,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+101,Unconstrained,random,3,3,
+101,Constrained,random,3,3,
+102,Unconstrained,random,3,3,
+102,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+103,Unconstrained,random,3,3,
+103,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+104,Unconstrained,random,3,3,
+104,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+105,Unconstrained,random,3,3,
+105,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+106,Unconstrained,random,3,3,
+106,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+107,Unconstrained,random,3,3,
+107,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+108,Unconstrained,random,3,3,
+108,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+109,Unconstrained,random,3,3,
+109,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+110,Unconstrained,random,3,3,
+110,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+111,Unconstrained,random,3,3,
+111,Constrained,random,3,3,
+112,Unconstrained,random,3,3,
+112,Constrained,random,3,3,
+113,Unconstrained,random,3,3,
+113,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+114,Unconstrained,random,3,3,
+114,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+115,Unconstrained,random,3,3,
+115,Constrained,random,3,3,
+116,Unconstrained,random,3,3,
+116,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+117,Unconstrained,random,3,3,
+117,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+118,Unconstrained,random,3,3,
+118,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+119,Unconstrained,random,3,3,
+119,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+120,Unconstrained,random,3,3,
+120,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+121,Unconstrained,random,3,3,
+121,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+122,Unconstrained,random,3,3,
+122,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+123,Unconstrained,random,3,3,
+123,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+124,Unconstrained,random,3,3,
+124,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+125,Unconstrained,random,3,3,
+125,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+126,Unconstrained,random,3,3,
+126,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+127,Unconstrained,random,3,3,
+127,Constrained,random,3,3,
+128,Unconstrained,random,3,3,
+128,Constrained,random,3,3,
+129,Unconstrained,random,3,3,
+129,Constrained,random,3,3,
+130,Unconstrained,random,3,3,
+130,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+131,Unconstrained,random,3,3,
+131,Constrained,random,3,3,
+132,Unconstrained,random,3,3,
+132,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+133,Unconstrained,random,3,3,
+133,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+134,Unconstrained,random,3,3,
+134,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+135,Unconstrained,random,3,3,
+135,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+136,Unconstrained,random,3,3,
+136,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+137,Unconstrained,random,3,3,
+137,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+138,Unconstrained,random,3,3,
+138,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+139,Unconstrained,random,3,3,
+139,Constrained,random,3,3,
+140,Unconstrained,random,3,3,
+140,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: kandidat kosong/tidak lolos actionability guard
+141,Unconstrained,random,3,3,
+141,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+142,Unconstrained,random,3,3,
+142,Constrained,random,3,3,
+143,Unconstrained,random,3,3,
+143,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+144,Unconstrained,random,3,3,
+144,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+145,Unconstrained,random,3,3,
+145,Constrained,random,3,3,
+146,Unconstrained,random,3,3,
+146,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+147,Unconstrained,random,3,3,
+147,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+148,Unconstrained,random,3,3,
+148,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+149,Unconstrained,random,3,3,
+149,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+150,Unconstrained,random,3,3,
+150,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+151,Unconstrained,random,3,3,
+151,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+152,Unconstrained,random,3,3,
+152,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+153,Unconstrained,random,3,3,
+153,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+154,Unconstrained,random,3,3,
+154,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+155,Unconstrained,random,3,3,
+155,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+156,Unconstrained,random,3,3,
+156,Constrained,random,3,3,
+157,Unconstrained,random,3,3,
+157,Constrained,random,3,3,
+158,Unconstrained,random,3,3,
+158,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+159,Unconstrained,random,3,3,
+159,Constrained,random,3,3,
+160,Unconstrained,random,3,3,
+160,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+161,Unconstrained,random,3,3,
+161,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+162,Unconstrained,random,3,3,
+162,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+163,Unconstrained,random,3,3,
+163,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+164,Unconstrained,random,3,3,
+164,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+165,Unconstrained,random,3,3,
+165,Constrained,random,3,3,
+166,Unconstrained,random,3,3,
+166,Constrained,random,3,3,
+167,Unconstrained,random,3,3,
+167,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+168,Unconstrained,random,3,3,
+168,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+169,Unconstrained,random,3,3,
+169,Constrained,random,3,3,
+170,Unconstrained,random,3,3,
+170,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+171,Unconstrained,random,3,3,
+171,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+172,Unconstrained,random,3,3,
+172,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+173,Unconstrained,random,3,3,
+173,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+174,Unconstrained,random,3,3,
+174,Constrained,random,3,3,
+175,Unconstrained,random,3,3,
+175,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+176,Unconstrained,random,3,3,
+176,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+177,Unconstrained,random,3,3,
+177,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+178,Unconstrained,random,3,3,
+178,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+179,Unconstrained,random,3,3,
+179,Constrained,random,3,3,
+180,Unconstrained,random,3,3,
+180,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+181,Unconstrained,random,3,3,
+181,Constrained,random,3,2,
+182,Unconstrained,random,3,3,
+182,Constrained,random,3,3,
+183,Unconstrained,random,3,3,
+183,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+184,Unconstrained,random,3,3,
+184,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+185,Unconstrained,random,3,3,
+185,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+186,Unconstrained,random,3,3,
+186,Constrained,random,3,3,
+187,Unconstrained,random,3,3,
+187,Constrained,random,3,3,
+188,Unconstrained,random,3,3,
+188,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+189,Unconstrained,random,3,3,
+189,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+190,Unconstrained,random,3,3,
+190,Constrained,random,3,3,
+191,Unconstrained,random,3,3,
+191,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+192,Unconstrained,random,3,3,
+192,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+193,Unconstrained,random,3,3,
+193,Constrained,random,3,3,
+194,Unconstrained,random,3,3,
+194,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+195,Unconstrained,random,3,3,
+195,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+196,Unconstrained,random,3,3,
+196,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+197,Unconstrained,random,3,3,
+197,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+198,Unconstrained,random,3,3,
+198,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+199,Unconstrained,random,3,3,
+199,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.
+200,Unconstrained,random,3,3,
+200,Constrained,failed,3,0,random: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration. | genetic: UserConfigValidationException: No counterfactuals found for any of the query points! Kindly check your configuration.

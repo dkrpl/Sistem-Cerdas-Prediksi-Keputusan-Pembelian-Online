@@ -1,0 +1,69 @@
+{
+  "quantile_low": 0.01,
+  "quantile_high": 0.99,
+  "immutable_features": [
+    "Month",
+    "OperatingSystems",
+    "Browser",
+    "Region",
+    "TrafficType",
+    "VisitorType",
+    "Weekend",
+    "SpecialDay"
+  ],
+  "actionable_features": [
+    "ProductRelated",
+    "ProductRelated_Duration",
+    "Administrative",
+    "Administrative_Duration",
+    "Informational",
+    "Informational_Duration"
+  ],
+  "analytical_features": [
+    "BounceRates",
+    "ExitRates",
+    "PageValues"
+  ],
+  "robust_permitted_range": {
+    "Administrative": [
+      0.0,
+      14.0
+    ],
+    "Administrative_Duration": [
+      0.0,
+      845.5328571270034
+    ],
+    "Informational": [
+      0.0,
+      6.0
+    ],
+    "Informational_Duration": [
+      0.0,
+      746.8450000000148
+    ],
+    "ProductRelated": [
+      1.0,
+      221.0
+    ],
+    "ProductRelated_Duration": [
+      0.0,
+      8690.32011384001
+    ],
+    "BounceRates": [
+      0.0,
+      0.2
+    ],
+    "ExitRates": [
+      0.00125,
+      0.2
+    ],
+    "PageValues": [
+      0.0,
+      86.65657022040017
+    ],
+    "SpecialDay": [
+      0.0,
+      1.0
+    ]
+  }
+}

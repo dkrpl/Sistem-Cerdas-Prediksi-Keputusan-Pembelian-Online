@@ -25,6 +25,20 @@ except ImportError:
 
 st.set_page_config(page_title="Explainability | Purchase Intelligence", page_icon="🔍", layout="wide")
 
+
+@st.cache_resource(show_spinner=False)
+def load_shap_explainer():
+    """Muat pipeline final dan bangun SHAP TreeExplainer sekali saja."""
+    import shap
+    model_pipe = joblib.load(os.path.join(MODELS_DIR, "best_model.joblib"))
+    prep = model_pipe.named_steps["prep"]
+    clf = model_pipe.named_steps["clf"]
+    num_cols = list(prep.transformers_[0][2])
+    cat_cols = list(prep.transformers_[1][2])
+    encoded_names = num_cols + prep.named_transformers_["cat"].get_feature_names_out(cat_cols).tolist()
+    return model_pipe, prep, shap.TreeExplainer(clf), encoded_names, num_cols
+
+
 st.title("🔍 Explainable AI: Transparansi Keputusan Model (SHAP)")
 st.write("Membedah alasan di balik keputusan model secara global maupun lokal menggunakan nilai kontribusi **SHapley Additive exPlanations (SHAP)**.")
 
@@ -37,22 +51,46 @@ else:
     st.subheader(f"📌 Penjelasan Lokal (Local Explanation) untuk Sesi Terkini")
     st.markdown(f"Status Prediksi: **{pred_res['label']}** | Probabilitas Pembelian: **{pred_res['prob_purchase']:.1%}**")
 
-    # Local SHAP Contribution Calculation
-    page_val = float(current_session["PageValues"].iloc[0])
-    exit_r = float(current_session["ExitRates"].iloc[0])
-    prod_dur = float(current_session["ProductRelated_Duration"].iloc[0])
-    prod_cnt = float(current_session["ProductRelated"].iloc[0])
-    bounce = float(current_session["BounceRates"].iloc[0])
+    # Local SHAP contribution: dihitung langsung dengan shap.TreeExplainer
+    # pada model final (bukan aproksimasi/heuristik).
+    try:
+        model_pipe, prep, explainer, encoded_names, num_cols = load_shap_explainer()
+    except Exception as exc:
+        st.error(f"Model/SHAP explainer tidak dapat dimuat: {exc}")
+        st.stop()
 
-    contribs = [
-        {"Fitur": "PageValues", "Nilai Aktual": f"{page_val:.1f}", "Dampak SHAP": (page_val - 5.0) * 0.04, "Arah": "Pendorong Beli (Positif)" if page_val > 5 else "Penghambat Beli (Negatif)"},
-        {"Fitur": "ExitRates", "Nilai Aktual": f"{exit_r:.4f}", "Dampak SHAP": -(exit_r - 0.02) * 4.0, "Arah": "Penghambat Beli (Negatif)" if exit_r > 0.02 else "Pendorong Beli (Positif)"},
-        {"Fitur": "ProductRelated_Duration", "Nilai Aktual": f"{prod_dur:.0f}s", "Dampak SHAP": (prod_dur - 400.0) * 0.0003, "Arah": "Pendorong Beli (Positif)" if prod_dur > 400 else "Penghambat Beli (Negatif)"},
-        {"Fitur": "ProductRelated", "Nilai Aktual": f"{prod_cnt:.0f}", "Dampak SHAP": (prod_cnt - 15) * 0.008, "Arah": "Pendorong Beli (Positif)" if prod_cnt > 15 else "Penghambat Beli (Negatif)"},
-        {"Fitur": "BounceRates", "Nilai Aktual": f"{bounce:.4f}", "Dampak SHAP": -(bounce - 0.01) * 3.0, "Arah": "Penghambat Beli (Negatif)" if bounce > 0.01 else "Pendorong Beli (Positif)"},
-        {"Fitur": "Month", "Nilai Aktual": str(current_session["Month"].iloc[0]), "Dampak SHAP": 0.08 if current_session["Month"].iloc[0] in ["Nov", "Dec"] else -0.05, "Arah": "Pendorong Beli (Positif)" if current_session["Month"].iloc[0] in ["Nov", "Dec"] else "Penghambat Beli (Negatif)"},
-    ]
-    df_contrib = pd.DataFrame(contribs).sort_values(by="Dampak SHAP", key=abs, ascending=True)
+    session_proc = prep.transform(current_session)
+    shap_raw = explainer.shap_values(session_proc)
+    shap_arr = np.asarray(shap_raw[1] if isinstance(shap_raw, list) else shap_raw)
+    if shap_arr.ndim == 3:
+        shap_arr = shap_arr[:, :, 1]
+    shap_row = shap_arr[0]
+    base_value = explainer.expected_value
+    if isinstance(base_value, (list, np.ndarray)) and np.ndim(base_value) > 0:
+        base_value = np.ravel(base_value)[-1]
+    raw_row = current_session.iloc[0]
+
+    def _actual_value(idx, name):
+        if name in num_cols:
+            return f"{float(raw_row[name]):.4g}"
+        return f"{int(round(float(session_proc[0, idx])))}"
+
+    df_all = pd.DataFrame({
+        "Fitur": encoded_names,
+        "Nilai Aktual": [_actual_value(i, n) for i, n in enumerate(encoded_names)],
+        "Dampak SHAP": shap_row.astype(float),
+    })
+    df_all["Arah"] = np.where(df_all["Dampak SHAP"] >= 0, "Pendorong Beli (Positif)", "Penghambat Beli (Negatif)")
+    df_contrib = (
+        df_all.reindex(df_all["Dampak SHAP"].abs().sort_values(ascending=False).index)
+        .head(10)
+        .sort_values(by="Dampak SHAP", key=abs, ascending=True)
+    )
+    st.caption(
+        f"SHAP TreeExplainer pada model final · base value E[f(x)] = {float(base_value):.3f} · "
+        f"f(x) = {float(base_value) + float(shap_row.sum()):.3f} (log-odds) · "
+        "ditampilkan 10 fitur dengan |SHAP| terbesar. Nilai one-hot: 1 = kategori aktif, 0 = tidak aktif."
+    )
 
     c1, c2 = st.columns([1, 1])
 
@@ -67,7 +105,7 @@ else:
             color_discrete_map={"Pendorong Beli (Positif)": "#00CC96", "Penghambat Beli (Negatif)": "#EF553B"},
             hover_data=["Nilai Aktual"]
         )
-        fig_waterfall.update_layout(xaxis_title="Kontribusi terhadap Log-Odds / Probabilitas Pembelian (SHAP Value)")
+        fig_waterfall.update_layout(xaxis_title="Kontribusi SHAP terhadap log-odds Purchase")
         st.plotly_chart(fig_waterfall, use_container_width=True)
 
     with c2:

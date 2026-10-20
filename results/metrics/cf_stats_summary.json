@@ -1,0 +1,35 @@
+{
+ "n_queries": 200,
+ "coverage": {
+  "Constrained": 0.235,
+  "Unconstrained": 1.0
+ },
+ "generated": {
+  "Constrained": 140,
+  "Unconstrained": 600
+ },
+ "requested": {
+  "Constrained": 600,
+  "Unconstrained": 600
+ },
+ "mcnemar": {
+  "U_only": 153,
+  "C_only": 0,
+  "p": 1.7516230804060213e-46
+ },
+ "n_both": 47,
+ "first30": {
+  "Unconstrained": {
+   "gen": 1.0,
+   "act": 0.2,
+   "plaus": 0.8444444444444444,
+   "l1": 0.055232160023590285
+  },
+  "Constrained": {
+   "gen": 0.26666666666666666,
+   "act": 1.0,
+   "plaus": 0.875,
+   "l1": 0.06967593757394602
+  }
+ }
+}
