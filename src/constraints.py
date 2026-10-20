@@ -47,7 +47,7 @@ class ConstraintValidator:
 
     def validate_ranges(self, cf_row: pd.Series) -> Tuple[bool, List[str]]:
         """
-        Ensures all numerical values stay within realistic minimum and maximum boundaries.
+        Ensures all numerical values stay within the configured empirical bounds.
         """
         violations = []
         for col, (min_val, max_val) in self.bounds.items():
@@ -132,7 +132,7 @@ class ConstraintValidator:
         if len(changed_cols) == 0:
             actionability_score = 1.0
         else:
-            actionable_changes = sum(1 for c in changed_cols if c in self.actionable_cols or c == "PageValues")
+            actionable_changes = sum(1 for c in changed_cols if c in self.actionable_cols)
             actionability_score = actionable_changes / len(changed_cols)
 
         return {
